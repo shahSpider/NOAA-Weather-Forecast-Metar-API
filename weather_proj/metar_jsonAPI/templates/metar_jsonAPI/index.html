@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<link rel = "stylesheet" href="{% static 'metar_jsonAPI/css/master.css' %}">
+	<title>Metar JSON Web API</title>
+</head>
+<body>
+	<div class="container">
+		<div class="home">
+			<h1>Welcome to Metar JSON Web API!</h1>
+			<p>Please point the browser to url <a href="http://127.0.0.1:8000/metar/ping"><i>http://127.0.0.1:8000/metar/ping</i></a> to get ping response.</p>
+			<p>Please point the browser to url <a href="http://127.0.0.1:8000/metar/info?scode=KSGS"><i>http://127.0.0.1:8000/metar/info?scode=KSGS</i></a> to get report data in json response. Where 'KSGS' is station code so you can use any of the station codes.</p>
+			<p>Please point the browser to url with params like <a href="http://127.0.0.1:8000/metar/info?scode=KSGS&nocache=0"><i>http://127.0.0.1:8000/metar/info?scode=KSGS&nocache=0</i></a> to get report data in json response fetching from local cache if exists.</p>
+			<p>Please point the browser to url with params like <a href="http://127.0.0.1:8000/metar/info?scode=KSGS&nocache=1"><i>http://127.0.0.1:8000/metar/info?scode=KSGS&nocache=1</i></a> to get report data in json response fetching live values. </p>
+		</div width=30%>
+			<p class="text-right" style="margin-top: 20px; padding-right: 20px; padding-left: 20px; color: white; background: black;"><strong>Task done by: Abdul Qadeer Shah</strong><p>
+		</div>
+	</div>
+	</div>
+</body>
+</html>
